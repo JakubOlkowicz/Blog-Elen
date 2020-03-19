@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $gray-color;
+  }
+.divimage{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.d-title{
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}

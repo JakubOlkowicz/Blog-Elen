@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: black;
+}
+
+.navbar {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 100%;
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
