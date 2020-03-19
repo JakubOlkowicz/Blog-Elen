@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #969696;
+}
+
+.divimage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.d-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.navbar {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 20px 0;
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: #969696;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+}
+
+.navbar .social {
+  position: absolute;
+  float: right;
+  top: 17px;
+  right: 0;
+}
+
+.navbar .social i {
+  padding: 10px;
+  font-size: 11px;
+}
+
+.title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.title h1 {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 150px;
+  letter-spacing: 0em;
+}
+
+.welcom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 600px;
+  margin: 40px 0 60px 0;
+  position: relative;
+}
+
+.welcom .divimage {
+  width: 60%;
+  background-image: url(https://cdn.pixabay.com/photo/2020/03/16/19/02/beach-4938039_1280.jpg);
+  margin-right: 100px;
+}
+
+.welcom .text {
+  text-align: left;
+  width: 40%;
+  padding: 220px 0 50px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.welcom .text p {
+  font-size: 20px;
+}
+
+.welcom .carusel {
+  position: absolute;
+  z-index: 99;
+  top: 100px;
+  left: 0;
+  right: 0;
+  width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  background-image: url(https://cdn.pixabay.com/photo/2015/07/10/17/27/sparkler-839831_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.about {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px 0 80px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.about .text {
+  padding: 40px;
+  margin: 0 20px;
+}
+
+.about .text h3 {
+  color: black;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-align: left;
+}
+
+.about .text p {
+  font-family: 'Old Standard TT', serif;
+  color: #969696;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0em;
+  font-weight: 400;
+  text-align: left;
+}
+
+.about .text a {
+  text-decoration: none;
+  color: #969696;
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.about .text a:hover {
+  transition-duration: 1.2s;
+}
+
+.about .me {
+  margin-bottom: 70px;
+}
+
+.about .animal {
+  margin-top: 70px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.about .first {
+  width: 379px;
+  height: 379px;
+  position: absolute;
+  left: 60%;
+  top: 12%;
+  z-index: 1;
+  background-image: url(https://cdn.pixabay.com/photo/2016/02/18/03/20/danbo-1206478_1280.jpg);
+}
+
+.about .second {
+  width: 352px;
+  height: 411px;
+  position: absolute;
+  left: 32%;
+  z-index: 2;
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/15/16/44/mandala-1826805_960_720.png);
+}
+
+.about .three {
+  position: absolute;
+  width: 497px;
+  height: 412px;
+  top: 40%;
+  left: 5%;
+  z-index: 1;
+  background-image: url(https://cdn.pixabay.com/photo/2017/05/29/09/08/silhouettes-2353238_1280.jpg);
+}
+
+.last-post {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-top: 80px;
+  background-color: rgba(192, 192, 192, 0.1);
+}
+
+.last-post .favorite {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0 60px;
+}
+
+.last-post .favorite h3 {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.last-post .favorite h3 a {
+  width: 100%;
+  padding-right: 55%;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #969696;
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ececec;
+}
+
+.last-post .allpost {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.last-post .allpost .post {
+  margin: 10px 60px;
+  display: inline-block;
+  text-align: center;
+}
+
+.last-post .allpost .post .one {
+  margin-bottom: 25px;
+  width: auto;
+  height: 300px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/12/31/16/38/portrait-3052705_960_720.jpg);
+}
+
+.last-post .allpost .post .two {
+  margin-bottom: 25px;
+  width: auto;
+  height: 300px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg);
+}
+
+.last-post .allpost .post span {
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: black;
+}
+
+.last-post .allpost .post h1 {
+  text-transform: none;
+  line-height: 1.2;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Old Standard TT';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.news {
+  margin: 140px 60px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news .text {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  display: inline-block;
+  position: relative;
+}
+
+.news .text span {
+  position: absolute;
+  opacity: 0.1;
+  color: black;
+  font-size: 120px;
+  top: -110px;
+  left: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Dancing Script", cursive;
+}
+
+.news .text h2 {
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  z-index: 2;
+}
+
+.news .text p {
+  color: black;
+  line-height: 1.8;
+  letter-spacing: 0em;
+  font-size: 16px;
+  text-align: left;
+  font-family: 'Old Standard TT';
+  font-weight: 400;
+}
+
+.news .text h4 {
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  text-align: left;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  padding: 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ececec;
+}
+
+.news .foto {
+  -ms-flex-positive: 2;
+      flex-grow: 2;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news .foto .divimage {
+  margin: 0 10px;
+  width: 145px;
+  height: 145px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg);
+}
+/*# sourceMappingURL=style.css.map */
