@@ -17,13 +17,13 @@
             padding: 0 20px;
             margin: auto;
             .links{
-                font-size: 16px;
+                font-size: 32px;
             }
             .media{
                 display: inline-block;
             }
             .social{
-                font-size: 16px;
+                font-size: 32px;
                 margin-right: 50px;
                 position: static;
             }
@@ -37,7 +37,7 @@
         justify-content: space-around;
         height: fit-content;
         .divimage{
-            position: absolute;
+            position: static;
             width: 100%;
             max-width: 100%;
             height: 500px;
@@ -46,15 +46,143 @@
             margin: auto 0;
         }
         .text{
-            margin-left: 0;
-            margin-top: 400px;
+            margin: 0;
+            padding: 0;
+            margin-top: 40px;
+            padding-left: 20px;
             width: 100%;
-            align-items: center;
+            align-items: flex-start;
+            h2{
+                font-size: 48px;
+                margin-bottom: 0;
+            }
             p{
-                text-align: center;
+                font-size: 32px;
+                text-align: left;
             }
         }
     
     }
+    //About
+    .about{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .me{
+            order: 2;
+            display: inline-block;
+            width: auto;
+            margin: 0;
+            padding-right: 0;
+            width: 55%;
+            h3{
+               font-size: 44px; 
+            }
+            p{
+                font-size: 32px;
+            }
+            a{
+                font-size: 22px;
+            }
+        }
+        .first{
+            display: inline-block;
+            order: 1;
+            position: static;
+            max-width: 37%;
+            height: 300px;
+        }
+        .second{
+            width: 300px;
+            height: 300px;
+            order: 2;
+            float: left;
+            top: 15%;
+            left: 5%;
+        }
+        .three{
+            max-width: 70%;
+            height: 300px;
+            order: 3;
+            position: static;
+        }
+        .animal{
+            order: 4;
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            padding-right: 0;
+            h3{
+                font-size: 44px; 
+             }
+             p{
+                 font-size: 32px;
+             }
+             a{
+                 font-size: 22px;
+             }
+        }
+    }
+    //Last Post
+    .last-post{
+        display: flex;
+        flex-direction: column;
+        .favorite{
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-size: 60px;
+            }
+            a{
+                font-size: 16px;
+                padding: 0;
+                margin-left: 0;
+            }
+        }
+        .allpost{
+            margin: 0 60px;
+            display: flex;
+            flex-direction: column;
+            .post{
+                span{
+                    font-size: 30px;
+                }
+                h1{
+                    font-size: 40px;
+                }
+ 
+            }
+        }
+    }
+    //Newsletter
+    .news{
+        flex-direction: column;
+        margin-bottom: 20px;
+        .text{
+            span{
+                font-size: 180px;
+                left: 70px;
+            }
+            h2{
+                font-size: 44px;
+            }
+            p{
+                font-size: 32px;
+                text-align: center;
+            }
+            a{  
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+        .foto{
+            margin: 20px 0;
+            flex-wrap: wrap;
+            width: 100%;
+            .divimage{
+                margin: 10px;
+            }
+        }
+    }
+    
 
 }
