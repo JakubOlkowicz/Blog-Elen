@@ -2,7 +2,8 @@
     display: inline-flex;
     min-width: 100%;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 15px;
+    
     .links{
         a{
             text-decoration: none;
@@ -20,7 +21,8 @@
         float: right;
         top: 17px;
         right: 0;
-        i{
+        i{  
+            color: $black-color;
             padding: 10px;
             font-size: 11px;
         }
@@ -29,13 +31,31 @@
 .title{
     display: flex;
     justify-content: center;
-    h1{
+    a{  
+        line-height: 1.2;
+        text-decoration: none;
+        display: inline-block;
         margin: 0;
         font-family: $spacial-font;
         color: $black-color;
         text-align: center;
         font-weight: 400;
         font-size: 150px;
+        letter-spacing: 0em;
+    }
+}
+.media{
+    display: none;
+    a{
+        line-height: 1;
+        font-size: 75px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0;
+        font-family: $spacial-font;
+        color: $black-color;
+        text-align: center;
+        font-weight: 400;
         letter-spacing: 0em;
     }
 }

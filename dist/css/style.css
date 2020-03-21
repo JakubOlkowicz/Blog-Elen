@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  height: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   line-height: 1.7;
@@ -26,7 +27,7 @@ body {
   min-width: 100%;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 20px 0;
+  margin: 20px 15px;
 }
 
 .navbar .links a {
@@ -48,6 +49,7 @@ body {
 }
 
 .navbar .social i {
+  color: black;
   padding: 10px;
   font-size: 11px;
 }
@@ -59,13 +61,33 @@ body {
       justify-content: center;
 }
 
-.title h1 {
+.title a {
+  line-height: 1.2;
+  text-decoration: none;
+  display: inline-block;
   margin: 0;
   font-family: "Dancing Script", cursive;
   color: black;
   text-align: center;
   font-weight: 400;
   font-size: 150px;
+  letter-spacing: 0em;
+}
+
+.media {
+  display: none;
+}
+
+.media a {
+  line-height: 1;
+  font-size: 75px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  color: black;
+  text-align: center;
+  font-weight: 400;
   letter-spacing: 0em;
 }
 
@@ -100,6 +122,11 @@ body {
 
 .welcom .text p {
   font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: 'Old Standard TT';
+  font-weight: 400;
 }
 
 .welcom .carusel {
@@ -358,5 +385,69 @@ body {
   width: 145px;
   height: 145px;
   background-image: url(https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: #FFFFFF;
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+  }
+  .header .title {
+    display: none;
+  }
+  .header .navbar {
+    position: static;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0 20px;
+    margin: auto;
+  }
+  .header .navbar .links {
+    font-size: 16px;
+  }
+  .header .navbar .media {
+    display: inline-block;
+  }
+  .header .navbar .social {
+    font-size: 16px;
+    margin-right: 50px;
+    position: static;
+  }
+  .welcom {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative;
+    margin-top: 70px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .welcom .divimage {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    margin: auto 0;
+  }
+  .welcom .text {
+    margin-left: 0;
+    margin-top: 400px;
+    width: 100%;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .welcom .text p {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
