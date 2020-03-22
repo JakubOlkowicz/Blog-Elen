@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media (max-width: 768px) {
     //Head
     .header{
         background-color: $white-color;
@@ -11,21 +11,25 @@
             display: none;
         }
         .navbar{
+            width: 100%;
             position: static;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
-            margin: auto;
+            margin: 0 20px;
             .links{
-                font-size: 32px;
+                a{
+                    font-size: 20px;
+                }
             }
             .media{
                 display: inline-block;
             }
             .social{
-                font-size: 32px;
                 margin-right: 50px;
                 position: static;
+                i{
+                    font-size: 32px;
+                }
             }
         }
     }
@@ -46,18 +50,19 @@
             margin: auto 0;
         }
         .text{
-            margin: 0;
+            width: auto;
+            display: flex;
+            margin: 0 30px;
             padding: 0;
-            margin-top: 40px;
-            padding-left: 20px;
-            width: 100%;
+            margin-top: 50px;
+            padding-left: 40px;
             align-items: flex-start;
             h2{
-                font-size: 48px;
+                font-size: 32px;
                 margin-bottom: 0;
             }
             p{
-                font-size: 32px;
+                font-size: 24px;
                 text-align: left;
             }
         }
@@ -75,13 +80,13 @@
             padding-right: 0;
             width: 55%;
             h3{
-               font-size: 44px; 
+               font-size: 33px; 
             }
             p{
-                font-size: 32px;
+                font-size: 24px;
             }
             a{
-                font-size: 22px;
+                font-size: 16px;
             }
         }
         .first{
@@ -92,8 +97,8 @@
             height: 300px;
         }
         .second{
-            width: 300px;
-            height: 300px;
+            max-width: 35%;
+            height: 250px;
             order: 2;
             float: left;
             top: 15%;
@@ -112,13 +117,13 @@
             margin: 0;
             padding-right: 0;
             h3{
-                font-size: 44px; 
+                font-size: 33px; 
              }
              p{
-                 font-size: 32px;
+                 font-size: 24px;
              }
              a{
-                 font-size: 22px;
+                 font-size: 16px;
              }
         }
     }
@@ -127,15 +132,17 @@
         display: flex;
         flex-direction: column;
         .favorite{
+            margin: 0 120px 20px 120px;
             display: flex;
             flex-direction: column;
-            h3{
-                font-size: 60px;
+            span{
+                font-size: 33px;
             }
             a{
                 font-size: 16px;
                 padding: 0;
                 margin-left: 0;
+                width: 100%;
             }
         }
         .allpost{
@@ -144,10 +151,10 @@
             flex-direction: column;
             .post{
                 span{
-                    font-size: 30px;
+                    font-size: 23px;
                 }
                 h1{
-                    font-size: 40px;
+                    font-size: 30px;
                 }
  
             }
@@ -158,19 +165,21 @@
         flex-direction: column;
         margin-bottom: 20px;
         .text{
-            span{
-                font-size: 180px;
-                left: 70px;
-            }
+
             h2{
-                font-size: 44px;
+                font-size: 33px;
+                span{
+                    font-size: 120px;
+                    left: 70px;
+                    top: 10%;
+                }    
             }
             p{
-                font-size: 32px;
+                font-size: 24px;
                 text-align: center;
             }
             a{  
-                font-size: 22px;
+                font-size: 16px;
                 text-align: center;
             }
         }
@@ -183,6 +192,11 @@
             }
         }
     }
-    
-
+}
+@media (min-width: 659px){
+    .links{
+        a{
+            font-size: 16px;
+        }
+    }
 }

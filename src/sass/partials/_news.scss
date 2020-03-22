@@ -6,22 +6,22 @@
         flex-grow: 1;
         display: inline-block;
         position: relative;
-        span{
-            position: absolute;
-            opacity: 0.1;
-            color: $black-color;
-            font-size: 120px;
-            top: -110px;
-            left: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: $spacial-font;
-        }
         h2{
             color: $black-color;
             font-size: 22px;
             text-align: center;
             z-index: 2;
+            span{
+                position: absolute;
+                opacity: 0.1;
+                color: $black-color;
+                font-size: 120px;
+                top: -110px;
+                left: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: $spacial-font;
+            }    
         }
         p{  
             color: $black-color;
