@@ -165,7 +165,7 @@ body {
 }
 
 .about .text h3 {
-  color: black;
+  color: #969696;
   font-size: 22px;
   text-transform: uppercase;
   line-height: 1.4;
@@ -176,7 +176,7 @@ body {
 
 .about .text p {
   font-family: 'Old Standard TT', serif;
-  color: #969696;
+  color: black;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0em;
@@ -396,13 +396,12 @@ body {
   background-image: url(https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .header {
     background-color: #FFFFFF;
     position: fixed;
     display: inline-block;
     z-index: 100;
-    width: 100%;
     top: 0;
   }
   .header .title {
@@ -415,20 +414,27 @@ body {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    margin: 0 20px;
+    margin: 0 5px;
   }
   .header .navbar .links a {
-    font-size: 20px;
+    padding: 4px;
+    font-size: 10px;
   }
   .header .navbar .media {
     display: inline-block;
   }
+  .header .navbar .media a {
+    padding-left: 5px;
+    font-size: 40px;
+  }
   .header .navbar .social {
-    margin-right: 50px;
+    padding-right: 5px;
+    margin: 0;
     position: static;
   }
   .header .navbar .social i {
-    font-size: 32px;
+    padding: 5px;
+    font-size: 12px;
   }
   .welcom {
     -ms-flex-direction: column;
@@ -444,29 +450,34 @@ body {
   .welcom .divimage {
     position: static;
     width: 100%;
-    max-width: 100%;
-    height: 500px;
+    height: 214px;
     top: 0;
     left: 0;
     margin: auto 0;
+  }
+  .welcom .carusel {
+    width: 170px;
+    height: 245px;
+    top: 50px;
   }
   .welcom .text {
     width: auto;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 30px;
+    margin: 0 10px;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 100px;
     padding-left: 40px;
     -ms-flex-align: start;
         align-items: flex-start;
   }
   .welcom .text h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 0;
   }
   .welcom .text p {
-    font-size: 24px;
+    word-break: break-word;
+    font-size: 16px;
     text-align: left;
   }
   .about {
@@ -474,8 +485,11 @@ body {
         flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 40px;
   }
   .about .me {
+    padding-bottom: 20px;
+    padding-left: 0;
     -ms-flex-order: 2;
         order: 2;
     display: inline-block;
@@ -485,13 +499,14 @@ body {
     width: 55%;
   }
   .about .me h3 {
-    font-size: 33px;
+    font-size: 22px;
   }
   .about .me p {
-    font-size: 24px;
+    word-break: break-word;
+    font-size: 16px;
   }
   .about .me a {
-    font-size: 16px;
+    font-size: 12px;
   }
   .about .first {
     display: inline-block;
@@ -502,17 +517,17 @@ body {
     height: 300px;
   }
   .about .second {
-    max-width: 35%;
-    height: 250px;
+    max-width: 110px;
+    height: 110px;
     -ms-flex-order: 2;
         order: 2;
     float: left;
-    top: 15%;
-    left: 5%;
+    top: 25%;
+    left: 3%;
   }
   .about .three {
-    max-width: 70%;
-    height: 300px;
+    max-width: 90%;
+    height: 200px;
     -ms-flex-order: 3;
         order: 3;
     position: static;
@@ -524,15 +539,16 @@ body {
     width: 100%;
     margin: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
   .about .animal h3 {
-    font-size: 33px;
+    font-size: 22px;
   }
   .about .animal p {
-    font-size: 24px;
+    font-size: 12px;
   }
   .about .animal a {
-    font-size: 16px;
+    font-size: 12px;
   }
   .last-post {
     display: -ms-flexbox;
@@ -541,67 +557,77 @@ body {
         flex-direction: column;
   }
   .last-post .favorite {
-    margin: 0 120px 20px 120px;
+    margin: 0 20px 20px 20px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
   }
   .last-post .favorite span {
-    font-size: 33px;
+    font-size: 22px;
   }
   .last-post .favorite a {
-    font-size: 16px;
+    font-size: 12px;
     padding: 0;
     margin-left: 0;
-    width: 100%;
+    width: 60%;
   }
   .last-post .allpost {
-    margin: 0 60px;
+    margin: 0 10px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .last-post .allpost .post {
+    margin: 10px 20px 20px 10px;
+  }
   .last-post .allpost .post span {
-    font-size: 23px;
+    font-size: 12px;
   }
   .last-post .allpost .post h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
   .news {
+    margin: 20px 30px 30px 20px;
     -ms-flex-direction: column;
         flex-direction: column;
-    margin-bottom: 20px;
   }
   .news .text h2 {
-    font-size: 33px;
+    font-size: 22px;
   }
   .news .text h2 span {
-    font-size: 120px;
-    left: 70px;
-    top: 10%;
+    font-size: 50px;
+    left: 0px;
+    top: 0;
   }
   .news .text p {
-    font-size: 24px;
+    word-break: break-word;
+    font-size: 12px;
     text-align: center;
   }
   .news .text a {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
   }
   .news .foto {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin: 20px 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .news .foto .divimage {
     margin: 10px;
   }
 }
 
-@media (min-width: 659px) {
+@media screen and (min-width: 659px) {
   .links a {
     font-size: 16px;
   }
