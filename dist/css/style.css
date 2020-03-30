@@ -96,6 +96,7 @@ body {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  background-color: #f9f9fa;
   height: 600px;
   margin: 40px 0 60px 0;
   position: relative;
@@ -114,6 +115,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 100px;
+  text-transform: uppercase;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: start;
@@ -122,12 +124,13 @@ body {
 
 .welcom .text p {
   font-size: 20px;
-  line-height: 1.8;
+  line-height: 1.9;
   letter-spacing: 0em;
   text-align: left;
   font-family: 'Old Standard TT';
   font-weight: 400;
   color: black;
+  text-transform: none;
 }
 
 .welcom .carusel {
@@ -263,7 +266,7 @@ body {
   text-align: left;
   text-transform: uppercase;
   display: inline;
-  color: black;
+  color: #969696;
 }
 
 .last-post .favorite a {
@@ -273,13 +276,21 @@ body {
   padding-bottom: 5px;
   width: 100%;
   text-decoration: none;
-  color: #969696;
+  color: black;
   font-size: 11px;
   letter-spacing: 0.06em;
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
-  border-bottom: 1px solid #969696;
+}
+
+.last-post .favorite a::after {
+  content: '';
+  display: block;
+  background-color: #969696;
+  width: 100%;
+  height: 1px;
+  top: 10px;
 }
 
 .last-post .allpost {
@@ -346,7 +357,8 @@ body {
   z-index: 2;
 }
 
-.news .text h2 span {
+.news .text h2::after {
+  content: 'the list';
   position: absolute;
   opacity: 0.1;
   color: black;
@@ -379,7 +391,15 @@ body {
   font-weight: 700;
   padding: 0;
   padding-bottom: 2px;
-  border-bottom: 1px solid #ececec;
+}
+
+.news .text a::after {
+  content: '';
+  display: block;
+  background-color: #969696;
+  width: 100%;
+  height: 1px;
+  top: 10px;
 }
 
 .news .foto {
@@ -460,7 +480,7 @@ body {
   .welcom .carusel {
     top: 50px;
     width: 230px;
-    height: 320px;
+    height: 350px;
   }
   .welcom .text {
     width: auto;
@@ -468,7 +488,7 @@ body {
     display: flex;
     margin: 0 20px;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 120px;
     padding-left: 40px;
     -ms-flex-align: start;
         align-items: flex-start;
@@ -496,7 +516,7 @@ body {
     display: inline-block;
     width: auto;
     margin: 0;
-    padding-right: 0;
+    padding-right: 20px;
     width: 55%;
   }
   .about .me h3 {
@@ -519,11 +539,11 @@ body {
   }
   .about .second {
     max-width: 35%;
-    height: 250px;
+    height: 215px;
     -ms-flex-order: 2;
         order: 2;
     float: left;
-    top: 15%;
+    top: 20%;
     left: 5%;
   }
   .about .three {
@@ -539,7 +559,7 @@ body {
     display: inline-block;
     width: 100%;
     margin: 0;
-    padding-right: 0;
+    padding-right: 20px;
   }
   .about .animal h3 {
     font-size: 24px;
@@ -556,38 +576,39 @@ body {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    padding: 30px 40px;
   }
   .last-post .favorite {
-    margin: 0 120px 20px 120px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    margin: 0;
   }
   .last-post .favorite span {
     font-size: 33px;
   }
   .last-post .favorite a {
-    font-size: 16px;
+    font-size: 12px;
     padding: 0;
     margin-left: 0;
     width: 100%;
   }
   .last-post .allpost {
-    margin: 0 60px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    margin: 0;
   }
   .last-post .allpost .post {
-    margin: 10px 30px;
+    margin: 10px 0;
   }
   .last-post .allpost .post .divimage {
     height: 250px;
   }
   .last-post .allpost .post span {
-    font-size: 13px;
+    font-size: 14px;
   }
   .last-post .allpost .post h1 {
     font-size: 20px;
@@ -595,15 +616,18 @@ body {
   .news {
     -ms-flex-direction: column;
         flex-direction: column;
-    margin-bottom: 20px;
+    margin: 40px 0;
+  }
+  .news .text {
+    padding: 0 20px;
   }
   .news .text h2 {
     font-size: 22px;
   }
-  .news .text h2 span {
+  .news .text h2::after {
     font-size: 90px;
-    left: 70px;
-    top: 10%;
+    left: 50px;
+    top: 0;
   }
   .news .text p {
     word-break: break-word;
@@ -625,9 +649,39 @@ body {
   }
 }
 
-@media (min-width: 500px) {
-  .media a {
-    font-size: 30px;
+@media (max-width: 500px) {
+  .header .navbar .media a {
+    font-size: 40px;
+  }
+  .header .navbar .links a {
+    font-size: 12px;
+  }
+  .header .navbar .social i {
+    font-size: 20px;
+  }
+  .welcom {
+    margin-top: 40px;
+  }
+  .welcom .text p {
+    font-size: 18px;
+  }
+  .about .text p {
+    font-size: 18px;
+  }
+  .about .text a {
+    font-size: 14px;
+  }
+  .about .second {
+    height: 175px;
+    top: 25%;
+  }
+  .last-post {
+    padding-top: 40px;
+  }
+  .last-post .favorite span {
+    font-size: 28px;
+  }
+  .news .text p {
+    font-size: 16px;
   }
 }
-/*# sourceMappingURL=style.css.map */

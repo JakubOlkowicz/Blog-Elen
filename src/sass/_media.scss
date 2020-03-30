@@ -59,14 +59,14 @@
         .carusel{
             top: 50px;
             width: 230px;
-            height: 320px;
+            height: 350px;
         }
         .text{
             width: auto;
             display: flex;
             margin: 0 20px;
             padding: 0;
-            margin-top: 50px;
+            margin-top: 120px;
             padding-left: 40px;
             align-items: flex-start;
             h2{
@@ -92,7 +92,7 @@
             display: inline-block;
             width: auto;
             margin: 0;
-            padding-right: 0;
+            padding-right: 20px;
             width: 55%;
             h3{
                font-size: 24px; 
@@ -114,10 +114,10 @@
         }
         .second{
             max-width: 35%;
-            height: 250px;
+            height: 215px;
             order: 2;
             float: left;
-            top: 15%;
+            top: 20%;
             left: 5%;
         }
         .three{
@@ -131,7 +131,7 @@
             display: inline-block;
             width: 100%;
             margin: 0;
-            padding-right: 0;
+            padding-right: 20px;
             h3{
                 font-size: 24px; 
              }
@@ -148,31 +148,32 @@
     .last-post{
         display: flex;
         flex-direction: column;
+        padding: 30px 40px;
         .favorite{
-            margin: 0 120px 20px 120px;
             display: flex;
             flex-direction: column;
+            margin: 0;
             span{
                 font-size: 33px;
             }
             a{
-                font-size: 16px;
+                font-size: 12px;
                 padding: 0;
                 margin-left: 0;
                 width: 100%;
             }
         }
         .allpost{
-            margin: 0 60px;
             display: flex;
             flex-direction: column;
+            margin: 0;
             .post{
-                margin: 10px 30px;
+                margin: 10px 0;
                 .divimage{
                     height: 250px;
                 }
                 span{
-                    font-size: 13px;
+                    font-size: 14px;
                 }
                 h1{
                     font-size: 20px;
@@ -184,16 +185,16 @@
     //Newsletter
     .news{
         flex-direction: column;
-        margin-bottom: 20px;
+        margin: 40px 0;
         .text{
-
+            padding: 0 20px;
             h2{
                 font-size: 22px;
-                span{
+            }
+            h2::after{
                     font-size: 90px;
-                    left: 70px;
-                    top: 10%;
-                }    
+                    left: 50px;
+                    top: 0;
             }
             p{
                 word-break: break-word;
@@ -216,10 +217,67 @@
     }
 }
 
-@media (min-width: 500px) {
-    .media{
-        a{
-            font-size: 30px;
+@media (max-width: 500px) {
+   //Head
+    .header{
+        .navbar{
+            .media{
+                a{
+                    font-size: 40px;
+                }
+            }
+            .links{
+                a{
+                    font-size: 12px;
+                }
+            }
+            .social{
+                i{
+                    font-size: 20px;
+                }
+            }
         }
+    }
+    //Welcom
+    .welcom{
+        margin-top: 40px;
+        .text{
+            p{
+               font-size: 18px; 
+            }
+        }
+        
+    }
+    //About
+    .about{
+        .text{
+            p{
+                font-size: 18px;
+            }
+            a{
+                font-size: 14px;
+            }
+        }
+        .second{
+            height: 175px;
+            top: 25%;
+        }
+    }
+    //Last Post
+    .last-post{
+        padding-top: 40px;
+        .favorite{
+            span{
+                font-size: 28px;
+            }
+        }
+    }
+    //news
+    .news{
+       .text{
+           p{
+               font-size: 16px;
+           }
+       } 
     }
 }
